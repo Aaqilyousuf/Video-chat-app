@@ -5,7 +5,7 @@ import { io } from "socket.io-client";
 
 const SocketContext = createContext();
 
-const socket = io("http://localhost:5000");
+const socket = io("https://video-chat-app-1-mf0q.onrender.com");
 
 const ContextProvider = ({ children }) => {
   const [stream, setStream] = useState(null);
